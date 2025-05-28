@@ -100,4 +100,12 @@ CONTRACTED MODEL GeoW_FunctionsExt
     !!@ fn.since = "2024-04-04";
     !!sample = "MANDATORY CONSTRAINT INTERLIS.elementCount(GeoW_FunctionsExt.Filter(THIS->references, "WHERE active == #true;")) >= 1";
     FUNCTION Filter(Objects: BAG OF ANYSTRUCTURE; Filter: TEXT): BAG OF ANYSTRUCTURE;
+
+    !!@ fn.description = "Extrahiert die Werte eines Attributes aus der Eingabemenge.";
+    !!@ fn.param = "Objects: Ausgangsobjekte.";
+    !!@ fn.param = "Attribute: Name des Attributs, welches extrahiert werden soll.";
+    !!@ fn.return = "Die extrahierten Attributwerte";
+    !!@ fn.since = "2025-05-25";
+    !!sample = "MANDATORY CONSTRAINT SomeFunction(GeoW_FunctionsExt.ExtractAttribute(SomeOtherFunction(THIS->Path), "Text"))";
+    FUNCTION ExtractAttribute(Objects: OBJECTS OF ANYCLASS; Attribute: TEXT): BAG OF ANYSTRUCTURE;
 END GeoW_FunctionsExt.

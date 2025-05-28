@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ili:transfer xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS" xmlns:geom="http://www.interlis.ch/geometry/1.0"
+              xmlns:TestSuite="http://www.interlis.ch/xtf/2.4/TestSuite">
+    <ili:headersection>
+        <ili:models>
+            <ili:model>GeoW_FunctionsExt</ili:model>
+            <ili:model>TestSuite</ili:model>
+        </ili:models>
+        <ili:sender>ili2gpkg-4.6.1-63db90def1260a503f0f2d4cb846686cd4851184</ili:sender>
+    </ili:headersection>
+    <ili:datasection>
+        <TestSuite:FunctionTestTopic ili:bid="TestSuite.FunctionTestTopic">
+            <TestSuite:Component ili:tid="00">
+                <TestSuite:Name>SingleObject</TestSuite:Name>
+                <TestSuite:Attr>BETHUMAR</TestSuite:Attr>
+            </TestSuite:Component>
+
+            <TestSuite:Component ili:tid="10">
+                <TestSuite:Name>AttributesUndefined</TestSuite:Name>
+            </TestSuite:Component>
+
+            <TestSuite:Component ili:tid="20">
+                <TestSuite:Name>MultipleObject</TestSuite:Name>
+                <TestSuite:Attr>DERTERTI</TestSuite:Attr>
+            </TestSuite:Component>
+            <TestSuite:Component ili:tid="30">
+                <TestSuite:Name>MultipleObject</TestSuite:Name>
+                <TestSuite:Attr>OIDECRID</TestSuite:Attr>
+            </TestSuite:Component>
+
+            <TestSuite:Component ili:tid="40">
+                <TestSuite:Name>ComplexObjects</TestSuite:Name>
+                <TestSuite:Geom>
+                    <geom:coord>
+                        <geom:c1>2511659</geom:c1>
+                        <geom:c2>1286781</geom:c2>
+                    </geom:coord>
+                </TestSuite:Geom>
+            </TestSuite:Component>
+            <TestSuite:Component ili:tid="50">
+                <TestSuite:Name>ComplexObjects</TestSuite:Name>
+                <TestSuite:Geom>
+                    <geom:coord>
+                        <geom:c1>2812335</geom:c1>
+                        <geom:c2>1288367</geom:c2>
+                    </geom:coord>
+                </TestSuite:Geom>
+            </TestSuite:Component>
+            <TestSuite:Component ili:tid="60">
+                <TestSuite:Name>ComplexObjects</TestSuite:Name>
+            </TestSuite:Component>
+
+            <TestSuite:TestCase ili:tid="test1">
+                <TestSuite:description>Get attribute of a single Object</TestSuite:description>
+                <TestSuite:path>Attr</TestSuite:path>
+                <TestSuite:objectName>SingleObject</TestSuite:objectName>
+                <TestSuite:expectedCount>1</TestSuite:expectedCount>
+            </TestSuite:TestCase>
+            <TestSuite:TestCase ili:tid="test2">
+                <TestSuite:description>Get attribute of multiple Objects</TestSuite:description>
+                <TestSuite:path>Attr</TestSuite:path>
+                <TestSuite:objectName>MultipleObject</TestSuite:objectName>
+                <TestSuite:expectedCount>2</TestSuite:expectedCount>
+            </TestSuite:TestCase>
+            <TestSuite:TestCase ili:tid="test3">
+                <TestSuite:description>Get complex attribute of multiple Objects</TestSuite:description>
+                <TestSuite:objectName>ComplexObjects</TestSuite:objectName>
+                <TestSuite:path>Geom</TestSuite:path>
+                <TestSuite:expectedCount>2</TestSuite:expectedCount>
+            </TestSuite:TestCase>
+            <TestSuite:TestCase ili:tid="test4">
+                <TestSuite:description>Path is undefined</TestSuite:description>
+                <TestSuite:objectName>SingleObject</TestSuite:objectName>
+                <TestSuite:expectedCount>1</TestSuite:expectedCount>
+            </TestSuite:TestCase>
+            <TestSuite:TestCase ili:tid="test5">
+                <TestSuite:description>Objects is empty</TestSuite:description>
+                <TestSuite:objectName>DoesNotExist</TestSuite:objectName>
+                <TestSuite:path>Attr</TestSuite:path>
+                <TestSuite:expectedCount>0</TestSuite:expectedCount>
+            </TestSuite:TestCase>
+            <TestSuite:TestCase ili:tid="test6">
+                <TestSuite:description>Attribute of object is undefined</TestSuite:description>
+                <TestSuite:objectName>AttributesUndefined</TestSuite:objectName>
+                <TestSuite:path>Attr</TestSuite:path>
+                <TestSuite:expectedCount>0</TestSuite:expectedCount>
+            </TestSuite:TestCase>
+        </TestSuite:FunctionTestTopic>
+    </ili:datasection>
+</ili:transfer>
