@@ -40,6 +40,6 @@ class IsInsideExternalXtfIoxPluginTest {
 
         assertEquals(1, vh.getWarn().size());
         // Interlis 2.4 XTF files do not work.
-        AssertionHelper.assertLogEventsContainMessage(vh.getWarn(), "GeoW_FunctionsExt.IsInsideExternalXtf: Error while reading xtf file \\S*TestData.xtf. Expected TRANSFER, but transfer found.");
+        AssertionHelper.assertLogEventsContainMessage(vh.getWarn(), "GeoW_FunctionsExt.IsInsideExternalXtf: Error while reading xtf file \\S*TestData.xtf. Unexpected XML event transfer found.");
     }
 }

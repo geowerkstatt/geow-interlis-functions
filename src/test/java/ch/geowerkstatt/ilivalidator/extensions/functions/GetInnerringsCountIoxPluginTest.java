@@ -21,7 +21,9 @@ class GetInnerringsCountIoxPluginTest {
     @Test
     void mandatoryConstraintOnThis() throws Ili2cFailure, IoxException {
         vh.runValidation(new String[]{TEST_DATA}, new String[]{"GetInnerRingsCount/MandatoryConstraintThis.ili"});
-        assertEquals(5, vh.getErrs().size());
+        assertEquals(6, vh.getErrs().size());
+
+        AssertionHelper.assertLogEventsContainMessage(vh.getErrs(), "^not a simple boundary \\(2530003.0, 1150003.0, NaN\\)$");
 
         AssertionHelper.assertConstraintErrors(vh, 1, "1", "AreaInnerRingCount");
         AssertionHelper.assertConstraintErrors(vh, 1, "1", "SurfaceInnerRingCount");
