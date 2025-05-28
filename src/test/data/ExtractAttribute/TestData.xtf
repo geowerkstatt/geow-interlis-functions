@@ -85,6 +85,12 @@
                 <TestSuite:path>Attr</TestSuite:path>
                 <TestSuite:expectedCount>0</TestSuite:expectedCount>
             </TestSuite:TestCase>
+            <TestSuite:TestCase ili:tid="test7">
+                <TestSuite:description>Failing test to protect against a validator that accepts everything.</TestSuite:description>
+                <TestSuite:objectName>SingleObject</TestSuite:objectName>
+                <TestSuite:path>Attr</TestSuite:path>
+                <TestSuite:expectedCount>100</TestSuite:expectedCount>
+            </TestSuite:TestCase>
         </TestSuite:FunctionTestTopic>
     </ili:datasection>
 </ili:transfer>

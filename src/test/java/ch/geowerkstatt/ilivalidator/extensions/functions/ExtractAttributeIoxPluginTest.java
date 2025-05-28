@@ -20,6 +20,7 @@ public final class ExtractAttributeIoxPluginTest {
     @Test
     void extractAttribute() throws Exception {
         vh.runValidation(new String[]{TEST_DATA}, new String[]{"ExtractAttribute/ExtractAttribute.ili"});
-        assertEquals(0, vh.getErrs().size());
+        assertEquals(1, vh.getErrs().size());
+        AssertionHelper.assertLogEventsContainMessage(vh.getErrs(), "^TestCase 'Failing test to protect against a validator that accepts everything.' failed.$");
     }
 }
