@@ -1,6 +1,6 @@
 INTERLIS 2.3;
 CONTRACTED MODEL GeoW_FunctionsExt
-  AT "mailto:info@geowerkstatt.ch" VERSION "2024-02-26" =
+  AT "mailto:info@geowerkstatt.ch" VERSION "2025-05-28" =
     IMPORTS GeometryCHLV95_V1;
     /**
     * Geometrie-Funktionen

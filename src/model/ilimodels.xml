@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
-<HEADERSECTION SENDER="mkilimodelsxml-5.2.5-b1471c2815bd6f7703c39f0de059eb083e194448" VERSION="2.3"><MODELS><MODEL NAME="IliRepository20" VERSION="2020-04-17" URI="http://models.interlis.ch/core"></MODEL></MODELS></HEADERSECTION>
+<HEADERSECTION SENDER="ilimanager-0.9.1-5015e873394cc094281fe8d69f7d4e9a329c88b3" VERSION="2.3"><MODELS><MODEL NAME="IliRepository20" VERSION="2020-04-17" URI="http://models.interlis.ch/core"></MODEL></MODELS></HEADERSECTION>
 <DATASECTION>
 <IliRepository20.RepositoryIndex BID="b1">
-<IliRepository20.RepositoryIndex.ModelMetadata TID="0"><Name>GeoW_FunctionsExt</Name><SchemaLanguage>ili2_4</SchemaLanguage><File>GeoW_FunctionsExt.ili</File><Version>2024-02-27</Version><publishingDate>2024-02-27</publishingDate><browseOnly>false</browseOnly><md5>3ae35c215f6c6462d11d55874f0c606b</md5></IliRepository20.RepositoryIndex.ModelMetadata>
-<IliRepository20.RepositoryIndex.ModelMetadata TID="1"><Name>GeoW_FunctionsExt</Name><SchemaLanguage>ili2_3</SchemaLanguage><File>GeoW_FunctionsExt_23.ili</File><Version>2024-02-27</Version><publishingDate>2024-02-27</publishingDate><dependsOnModel><IliRepository20.ModelName_><value>GeometryCHLV95_V1</value></IliRepository20.ModelName_></dependsOnModel><browseOnly>false</browseOnly><md5>c5ff9f99e3674d63451bf80313c3f446</md5></IliRepository20.RepositoryIndex.ModelMetadata>
+<IliRepository20.RepositoryIndex.ModelMetadata TID="0"><Name>GeoW_FunctionsExt</Name><SchemaLanguage>ili2_4</SchemaLanguage><File>GeoW_FunctionsExt.ili</File><Version>2025-05-28</Version><publishingDate>2026-02-24</publishingDate><Issuer>mailto:info@geowerkstatt.ch</Issuer><browseOnly>false</browseOnly><md5>266c0b581acdf4fa865d09859a389b54</md5></IliRepository20.RepositoryIndex.ModelMetadata>
+<IliRepository20.RepositoryIndex.ModelMetadata TID="1"><Name>GeoW_FunctionsExt</Name><SchemaLanguage>ili2_3</SchemaLanguage><File>GeoW_FunctionsExt_23.ili</File><Version>2025-05-28</Version><publishingDate>2026-02-24</publishingDate><dependsOnModel><IliRepository20.ModelName_><value>GeometryCHLV95_V1</value></IliRepository20.ModelName_></dependsOnModel><Issuer>mailto:info@geowerkstatt.ch</Issuer><browseOnly>false</browseOnly><md5>8adfbc762a87388c2fb8e62346160b53</md5></IliRepository20.RepositoryIndex.ModelMetadata>
 </IliRepository20.RepositoryIndex>
 </DATASECTION>
 </TRANSFER>
